@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.tengah {
+  text-align: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto; /* add margin to center the content */
+}
+
+a.tbl-biru {
+  background: maroon;
+  border-radius: 20px;
+  margin-top: 20px;
+  padding: 15px 20px 15px 20px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+a.tbl-biru:hover {
+  background: #e2e2e2;
+  text-decoration: none;
+  color: black;
+}
+
+a.tbl-pink {
+  background: #fc5185;
+  border-radius: 20px;
+  margin-top: 20px;
+  padding: 15px 20px 15px 20px;
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+a.tbl-pink:hover {
+  background: #3f72af;
+  text-decoration: none;
+}
+
+section {
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+p {
+  margin: 10px 0px 10px 0px;
+  padding: 10px 0px 10px 0px;
+}
+
+.kolom {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.kolom .deskripsi {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "comic sans ms";
+  color: #364f6b;
+}
+
+h2 {
+  font-family: "comic sans ms";
+  font-weight: 800;
+  font-size: 45px;
+  margin-bottom: 20px;
+  color: #364f6b;
+  width: 100%;
+  line-height: 50px;
+}
+
+/* Add these media queries to make the layout responsive */
+@media screen and (max-width: 991.98px) {
+  section {
+    display: block;
+  }
+
+  section img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .kolom {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .tengah {
+    max-width: 90%; /* reduce max-width on smaller screens */
+  }
+
+  a.tbl-biru,
+  a.tbl-pink {
+    padding: 10px 15px 10px 15px; /* reduce padding on smaller screens */
+  }
+
+  p {
+    margin: 5px 0px 5px 0px;
+    padding: 5px 0px 5px 0px;
+  }
+
+  .kolom .deskripsi {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 479.98px) {
+  .tengah {
+    max-width: 80%; /* reduce max-width on even smaller screens */
+  }
+
+  a.tbl-biru,
+  a.tbl-pink {
+    padding: 5px 10px 5px 10px; /* reduce padding on even smaller screens */
+  }
+
+  p {
+    margin: 2px 0px 2px 0px;
+    padding: 2px 0px 2px 0px;
+  }
+
+  .kolom .deskripsi {
+    font-size: 16px;
+  }
+}

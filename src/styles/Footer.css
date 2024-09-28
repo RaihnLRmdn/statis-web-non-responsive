@@ -1,0 +1,32 @@
+#copyright {
+  text-align: center;
+  width: 100%;
+  padding: 50px 0px 50px 0px;
+  margin-top: 50px;
+}
+
+/* Add media queries for different screen sizes */
+
+/* For mobile devices (max-width: 768px) */
+@media only screen and (max-width: 768px) {
+  #copyright {
+    padding: 20px 0px 20px 0px;
+    margin-top: 20px;
+  }
+}
+
+/* For tablets (min-width: 769px) and (max-width: 1024px) */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  #copyright {
+    padding: 30px 0px 30px 0px;
+    margin-top: 30px;
+  }
+}
+
+/* For desktop devices (min-width: 1025px) */
+@media only screen and (min-width: 1025px) {
+  #copyright {
+    padding: 50px 0px 50px 0px;
+    margin-top: 50px;
+  }
+}

@@ -1,0 +1,29 @@
+#contact {
+  background: #dedede;
+  padding: 50px 0px 50px 0px;
+}
+
+.footer {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.footer-section {
+  width: 20%;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 900px) {
+  .footer-section {
+    width: 50%; /* increase width to 50% on mobile devices */
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .footer-section {
+    width: 100%; /* make it full-width on very small screens */
+  }
+}
